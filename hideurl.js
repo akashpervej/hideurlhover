@@ -23,8 +23,8 @@
                     if (href.toLowerCase().indexOf("#") >= 0) {
                         // You can add custom behavior here for internal links
                     } else {
-                        // Open external links in a new tab
-                        window.open(href, '_blank');
+                        // Open the link in the same window
+                        window.location.href = href;
                     }
                 });
             });
@@ -32,3 +32,4 @@
         }, 500); // Delay to ensure the document is fully loaded
     });
 </script>
+
